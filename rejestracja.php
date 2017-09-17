@@ -2,8 +2,7 @@
 ob_start();
 ob_implicit_flush(0);
 session_start(); // rozpoczynanie sesji
-if(@$_SESSION['zalogowany']==1) //jeżeli jesteśmy już zalogowani to przenosi nas na stronę główną
-{
+if(@$_SESSION['zalogowany']==1) //sprawdz czy jestes zalogowany
     header('Location: index.php ');
 }
 ?>
